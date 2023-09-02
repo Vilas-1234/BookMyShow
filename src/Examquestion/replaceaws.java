@@ -8,16 +8,14 @@ public class replaceaws {
         while (st.contains ("AWS")) {
             st = st.replace ("AWS", "");
         }
-        System.out.println (st);
-        String sst = "     Vilas         manik    pokarne ";
-    int count=0;
-        StringTokenizer stt= new StringTokenizer (sst);
-        while(stt.hasMoreElements ()==true){
-            System.out.println (stt.nextElement () );
-            count++;
+    String str= "VilasManikPokarne";
+        int arr[]= new int [256];
+        for(int i=0; i=<=str.length(); i++){
+            arr[str.charAt(i)]=arr[str.charAt(i)]+1;
         }
-        System.out.println (count);
-   }
-
+        
+        for(int i=0; i<arr.lenght; i++){
+           System.out.println((char)i+"  occurs   :  "+arr[i]+"  times "); 
     }
+}
 }
